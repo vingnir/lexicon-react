@@ -9,7 +9,10 @@
 
 .home,
 .people,
-.languages {
+.languages,
+.profile,
+.people-details,
+.error-page {
   display: flex;
   height: 90vh;
   align-items: center;

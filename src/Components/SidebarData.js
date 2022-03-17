@@ -22,4 +22,16 @@ export const SidebarData = [
     icon: <IoIcons.IoMdPeople />,
     cName: "nav-text",
   },
+  {
+    title: "Profile",
+    path: "/profile",
+    icon: <IoIcons.IoMdPeople />,
+    cName: "nav-text",
+  },
+  {
+    title: "PeopleDetails",
+    path: "/people-details",
+    icon: <IoIcons.IoMdPeople />,
+    cName: "nav-text",
+  },
 ];
