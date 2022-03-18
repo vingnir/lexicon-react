@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
+import Navbar from './Navbar';
 
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false)
@@ -13,11 +14,14 @@ function Sidebar() {
 
   return (
     <>
-      <IconContext.Provider value={{color: '#fff'}}>
+      <IconContext.Provider value={{ color: "#fff" }}>
         <div className="sidebar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+          <div className="justify-content-end" style={{ position: "fixed", right: "0", marginRight: "15px" }}>
+            <Navbar />
+          </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>

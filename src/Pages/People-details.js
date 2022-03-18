@@ -9,7 +9,7 @@ function PeopleDetails() {
       <div>People details</div>
       <button
         onClick={() => {
-          navigate("/home");
+          navigate("/");
         }}
       >
           Home
