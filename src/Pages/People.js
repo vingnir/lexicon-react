@@ -20,7 +20,7 @@ function Form(props) {
   async function handleSubmit(event) {
     event.preventDefault();
     const res = await axios.get(
-      `https://localhost:7042/api/Person/${userinput}`
+      `https://lexicon-reactwebapi.azurewebsites.net/api/person/${userinput}`
     );
     props.onSubmit(res.data);
     const clean = () => changeValue("");
