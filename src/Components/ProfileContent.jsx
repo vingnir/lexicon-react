@@ -1,6 +1,5 @@
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from "../authConfig";
-import Button from "react-bootstrap/Button";
 import React, { useState } from "react";
 import { ProfileData } from "./ProfileData";
 import { callMsGraph } from "./graph";
@@ -10,7 +9,7 @@ function ProfileContent() {
     const { instance, accounts } = useMsal();
     const [graphData, setGraphData] = useState(null);
 
-    const name = accounts[0] && accounts[0].name;
+    const name = accounts[0] && accounts[0].name; 
 
     function RequestProfileData() {
         const request = {
@@ -29,14 +28,9 @@ function ProfileContent() {
     }
 
     return (
-        <>
-            <h5 className="card-title">Welcome {name}</h5>
-            {graphData ? 
-                <ProfileData graphData={graphData} />
-                :
-                <Button variant="secondary" onClick={RequestProfileData}>Request Profile Information</Button>
-            }
-        </>
+      <>
+        <span className="nav-item">{name}</span>
+      </>
     );
 };
 
