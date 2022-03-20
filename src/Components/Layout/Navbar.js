@@ -4,11 +4,12 @@ import { SignInButton } from "./SignInButton";
 import { SignOutButton } from "./SignOutButton";
 import { useIsAuthenticated } from "@azure/msal-react";
 import "./Navbar.css";
-import {
-  AuthenticatedTemplate,
-  UnauthenticatedTemplate,
-  useMsal,
-} from "@azure/msal-react";
+import { AuthenticatedTemplate } from "@azure/msal-react";
+// import {
+//   AuthenticatedTemplate,
+//   // UnauthenticatedTemplate,
+//   // useMsal,
+// } from "@azure/msal-react";
 import ProfileContent from "../ProfileContent"; 
 
 function Navbar() {

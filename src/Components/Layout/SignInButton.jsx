@@ -5,7 +5,7 @@ import { loginRequest } from "../../authConfig";
 
 function handleLogin(instance) {
   instance.loginPopup(loginRequest).catch((e) => {
-    console.error(e);
+    console.error(e); 
   });
 }
 

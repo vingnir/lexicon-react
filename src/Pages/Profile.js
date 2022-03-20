@@ -1,19 +1,20 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+// import { useNavigate, useParams } from "react-router-dom";
 
 function Profile() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
   let { id } = useParams();
   return (
     <div className="profile">
       <h1>Profile page for {id} </h1>
-      <button
+      {/* <button
         onClick={() => {
           navigate("/home");
         }}
       >
         Home
-      </button>
+      </button> */}
     </div>
   );
 }

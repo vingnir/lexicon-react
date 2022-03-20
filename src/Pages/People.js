@@ -13,7 +13,6 @@ useEffect(() => {
     (response) => {
       response.json()
       .then((data) => {
-
         const people = [];
         for (const key in data)
         {
@@ -40,10 +39,14 @@ useEffect(() => {
  }
 
  return (
-   <section>
-     <span>All People</span>
-     <PeopleList people={loadedPeople} />
-   </section>
+   <div className="container">
+     <div className="row justify-content-center m-3">
+       <h1 className="text-center">People</h1>
+     </div>
+     <div className="row">
+       <PeopleList people={loadedPeople} />
+     </div>
+   </div>
  );
 }
 

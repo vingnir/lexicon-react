@@ -6,7 +6,7 @@ import { SidebarData } from './SidebarData'
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
 import Navbar from './Navbar';
-import {AuthenticatedTemplate} from "@azure/msal-react";
+// import {AuthenticatedTemplate} from "@azure/msal-react";
 
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false)
